@@ -33,8 +33,8 @@ export default function Busca() {
                 <hr />
 
                 <ul>
-                    {movieList.map(item=>(
-                        <li key={item.id}>
+                    {movieList.map((item, index) => (
+                        <li key={index}>
                             <Link href={`/movie/${item.id}`}>
                                 <a>
                                     <img src={`https://image.tmdb.org/t/p/original${item.poster_path}`} width="150" /><br />

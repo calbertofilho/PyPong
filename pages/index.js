@@ -21,8 +21,8 @@ export default function Home({list}) {
         </Link>
 
         <ul>
-          {list.map(item => (
-            <li key={item.id}>
+          {list.map((item, index) => (
+            <li key={index}>
               <Link href={`/movie/${item.id}`}>
                 <a>
                   <img src={`https://image.tmdb.org/t/p/original${item.poster_path}`} width="150" /><br />
