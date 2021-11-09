@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import Image from 'next/image';
 import React from 'react';
 import styles from '../styles/Busca.module.css';
 
@@ -37,7 +38,7 @@ export default function Busca() {
                         <li key={index}>
                             <Link href={`/movie/${item.id}`}>
                                 <a>
-                                    <img src={`https://image.tmdb.org/t/p/original${item.poster_path}`} width="150" /><br />
+                                    <Image src={`https://image.tmdb.org/t/p/original${item.poster_path}`} alt={item.title} width="150" /><br />
                                     {item.title}
                                 </a>
                             </Link>
