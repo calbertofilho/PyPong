@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Image from 'next/image';
 import React from 'react';
 import styles from '../../styles/Detalhe.module.css';
 
@@ -12,7 +13,7 @@ export default function Detalhe({info}) {
 
             <main className={styles.main}>
                 <h1 className={styles.title}>
-                    <img src={`https://image.tmdb.org/t/p/original${info.poster_path}`} width="150" /><br />
+                    <Image src={`https://image.tmdb.org/t/p/original${info.poster_path}`} alt={item.title} width="150" /><br />
                     {info.title}
                 </h1>
 
@@ -22,7 +23,7 @@ export default function Detalhe({info}) {
                     {info.overview}
                 </p>
 
-                <img src={`https://image.tmdb.org/t/p/original${info.backdrop_path}`} width="400" />
+                <Image src={`https://image.tmdb.org/t/p/original${info.backdrop_path}`} alt={item.title} width="400" />
             </main>
         </div>
     );
