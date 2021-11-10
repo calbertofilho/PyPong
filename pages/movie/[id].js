@@ -13,7 +13,7 @@ export default function Detalhe({info}) {
 
             <main className={styles.main}>
                 <h1 className={styles.title}>
-                    <Image src={`https://image.tmdb.org/t/p/original${info.poster_path}`} alt={item.title} width="150" /><br />
+                    <Image src={`https://image.tmdb.org/t/p/original${info.poster_path}`} alt={info.title} width="256" height="384" /><br />
                     {info.title}
                 </h1>
 
@@ -23,7 +23,7 @@ export default function Detalhe({info}) {
                     {info.overview}
                 </p>
 
-                <Image src={`https://image.tmdb.org/t/p/original${info.backdrop_path}`} alt={item.title} width="400" />
+                <Image src={`https://image.tmdb.org/t/p/original${info.backdrop_path}`} alt={info.title} width="256" height="144" /><br />
             </main>
         </div>
     );

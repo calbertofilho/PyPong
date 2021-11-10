@@ -26,7 +26,7 @@ export default function Home({list}) {
             <li key={index}>
               <Link href={`/movie/${item.id}`}>
                 <a>
-                  <Image src={`https://image.tmdb.org/t/p/original${item.poster_path}`} alt={item.title} width="150" /><br />
+                  <Image src={`https://image.tmdb.org/t/p/original${item.poster_path}`} alt={item.title} width="256" height="384" /><br />
                   {item.title}
                 </a>
               </Link>
