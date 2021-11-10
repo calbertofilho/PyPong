@@ -20,7 +20,7 @@ export default function Detalhe({info}) {
                 <p>
                     Nota: {info.vote_average}<br />
                     Lançamento: {info.release_date}<br />
-                    {info.overview}
+                    Descrição: {info.overview}
                 </p>
 
                 <Image src={`https://image.tmdb.org/t/p/original${info.backdrop_path}`} alt={info.title} width="256" height="144" /><br />
